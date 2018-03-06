@@ -13,6 +13,8 @@ This is a base for django - react projects
 
 * $ source venv/bin/activate
 
+* $ cd django-react-base
+
 * $ pip install -r requirements.txt
 
 * $ mysql -u root -p
