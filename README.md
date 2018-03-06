@@ -25,6 +25,8 @@ This is a base for django - react projects
 
 * $ python manage.py migrate
 
+* $ npm install
+
 * $ python manage.py runserver
 
 * Proceed from here
