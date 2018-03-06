@@ -1,0 +1,1 @@
+web: gunicorn base.wsgi:application  --timeout 60 --keep-alive 5 --log-level debug --log-file -

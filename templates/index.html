@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Base {% block title %} {% endblock %}</title>
+
+        <link rel="stylesheet" href="{% static 'style/css/font-awesome.min.css' %}" type="text/css">
+{#        <link rel="stylesheet" href="{% static 'style/css/style.css' %}" type="text/css">#}
+        <link rel="stylesheet" href="{% static 'style/css/bootstrap.min.css' %}" type="text/css">
+    </head>
+    <body>
+
+        <div id="app">
+
+                <p class="App-intro">
+                    Loading site...
+                </p>
+        </div>
+
+
+        <script src="{% static 'bundles/main.js' %}"></script>
+        <script src="{% static 'style/js/jquery.min.js' %}"></script>
+        <script src="{% static 'style/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap-wizard/1.2/jquery.bootstrap.wizard.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register("{% static 'style/js/service-worker.js' %}").then(function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        }, function(err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }).catch(function(err) {
+                        console.log(err)
+                    });
+                });
+            } else {
+                console.log('service worker is not supported');
+            }
+        </script>
+    </body>
+
+</html>
