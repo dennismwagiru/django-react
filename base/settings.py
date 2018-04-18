@@ -25,7 +25,7 @@ SECRET_KEY = 'j!0$%mo+@m#o$5!br6@#&my@gfxwh9i!!7z_g*#hvkclpv2k!a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = []
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'oauth2_provider',
+    # 'oauth2_provider',
 ]
 
 MIDDLEWARE = [
@@ -81,16 +81,9 @@ WSGI_APPLICATION = 'base.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-           'init_command': 'SET default_storage_engine=INNODB',
-        },
-        'NAME': 'base',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': '',
-    },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'boilerplate',
+    }
 }
 
 
@@ -113,13 +106,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
-    ),
     # 'DEFAULT_AUTHENTICATION_CLASSES': (
-    #     'rest_framework.authentication.TokenAuthentication',
-    #     # 'rest_framework.permissions.IsAuthenticated',
+    #     'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
     # ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.permissions.IsAuthenticated',
+    ),
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
     ),

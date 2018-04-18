@@ -1,5 +1,5 @@
 {
-  "name": "E-Wallet",
+  "name": "Django React Boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "./static_root/js/index",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dennis Joel Mwagiru",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
