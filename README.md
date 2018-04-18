@@ -5,8 +5,14 @@
 
 ### How do I get set up? ###
 * Create a python virtual environment
-* Install requirements from requirements.text - pip install requirements.txt
-* Install npm packages - npm install
+* Install requirements from requirements.text
+```
+pip install requirements.txt
+```
+* Install npm packages
+```
+npm install
+```
 * Happy Coding
 
 ### Developer ###
