@@ -1,19 +1,34 @@
-# README #
+# django-react
 
-* This is my boilerplate for django react projects
-* Version 1.0
+> A React.js project
 
-### How do I get set up? ###
-* Create a python virtual environment
-* Install requirements from requirements.text
-```
-pip install requirements.txt
-```
-* Install npm packages
-```
+## Build Setup
+
+``` bash
+# create a python3.6 virtual environment
+python3.6 -m venv venv
+
+# activate virtual environment
+source venv/bin/activate
+
+# install requirements.txt
+pip install -r requirements.txt
+
+# migrate
+python manage.py migrate
+
+# install dependencies
 npm install
-```
-* Happy Coding
 
-### Developer ###
-dennismwagiru@gmail.com
+# build for development with hot reload
+webpack --watch
+
+# build for production with minification
+webpack
+
+# run server
+python manage.py runserver
+```
+
+## Developer
+Dennis Joel Mwagiru dennismwagiru@gmail.com
