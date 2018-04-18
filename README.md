@@ -1,36 +1,13 @@
 # README #
 
-This is a base for django - react projects
-
-### What is this repository for? ###
-
-* Quick summary
+*This is my boilerplate for django react projects
 * Version 1.0
 
 ### How do I get set up? ###
+Create a python virtual environment
+Install requirements from requirements.text - pip install requirements.txt
+Install npm packages - npm install
+* Happy Coding
 
-* $ python3.6 -m venv venv
-
-* $ source venv/bin/activate
-
-* $ cd django-react-base
-
-* $ pip install -r requirements.txt
-
-* $ mysql -u root -p
-* Enter password: 
-* mysql> create database base;
-
-* mysql> exit
-
-* $ python manage.py migrate
-
-* $ npm install
-
-* $ python manage.py runserver
-
-* Proceed from here
-
-### Who do I talk to? ###
-
+### Developer ###
 dennismwagiru@gmail.com
