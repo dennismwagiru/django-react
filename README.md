@@ -21,10 +21,10 @@ python manage.py migrate
 npm install
 
 # build for development with hot reload
-webpack --watch
+npm run start
 
 # build for production with minification
-webpack
+npm run build
 
 # run server
 python manage.py runserver

@@ -1,41 +1,60 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.panel-content {
+	padding: 0 5px 0 5px;
 }
 
-body {
-    /*font-family: "";*/
+.panel-button {
+    padding: 0 10px 0 10px;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: "sidebar main";
-    width: 100vw;
-    height: 100vh;
+.panel-heading {
+    text-align: center;
+    padding: 5px 15px;
 }
 
-#main {
-    grid-area: main;
+.panel-footer {
+	text-align: end;
+	padding: 1px 15px;
+	color: #A0A0A0;
 }
 
-#new-message {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 5px;
-    margin-left: 0px;
-    border-top: 1px solid #3f3f3f;
+.profile-img {
+	width: 96px;
+	height: 96px;
+	margin: 0 auto 10px;
+	display: block;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
 }
 
-#messages-list {
-    padding: 5px 0 0 5px;
+.center-block{
+    float: none;
 }
 
-#sidebar {
-    grid-area: sidebar;
-    padding: 5px 0 0 5px;
-    border-right: 1px solid #3f3f3f;
-    height: 100px;
+.center-text {
+    text-align: center;
+    padding: 5px 0 5px 0;
 }
+
+.big-name {
+    font-size: 26px;
+}
+
+.slogan {
+    font-size: 18px;
+}
+
+.voffset  { margin-top: 2px; }
+.voffset1 { margin-top: 5px; }
+.voffset2 { margin-top: 10px; }
+.voffset3 { margin-top: 15px; }
+.voffset4 { margin-top: 30px; }
+.voffset5 { margin-top: 40px; }
+.voffset6 { margin-top: 60px; }
+.voffset7 { margin-top: 80px; }
+.voffset8 { margin-top: 100px; }
+.voffset9 { margin-top: 150px; }
+.voffset10 { margin-top: 170px; }
+.voffset11 { margin-top: 200px; }
+.voffset12 { margin-top: 300px; }
+.voffset13 { margin-top: 350px; }

@@ -1,7 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Router, Route, browserHistory} from 'react-router';
-import Home from './home';
+import Login from './login';
+import Setup from './setup';
 
 function requireAuth(nextState, replace) {
     if (!localStorage.token) {
@@ -14,7 +15,7 @@ function requireAuth(nextState, replace) {
 
 render((
     <Router history={browserHistory}>
-        <Route path={'/app/'} component={Home} />
-
+        <Route path={'/app/login/'} component={Login} />
+        <Route path={'/app/setup/'} component={Setup} />
     </Router>),
     document.getElementById('app'));
